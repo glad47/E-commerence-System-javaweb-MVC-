@@ -83,12 +83,12 @@
             <h2>All Products</h2>
         </div>
         <div  class="col">
-            <select id="sort">
-                <option>Sort Sorting</option>
-                <option>Sort by price</option>
-                <option>Sort by popularity</option>
-                <option>Sort by sale</option>
-            </select>
+<%--            <select id="sort">--%>
+<%--                <option>Sort Sorting</option>--%>
+<%--                <option>Sort by price</option>--%>
+<%--                <option>Sort by popularity</option>--%>
+<%--                <option>Sort by sale</option>--%>
+<%--            </select>--%>
         </div>
 
     </div>

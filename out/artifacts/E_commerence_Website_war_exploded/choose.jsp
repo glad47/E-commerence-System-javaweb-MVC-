@@ -13,27 +13,20 @@
 </head>
 <body>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var = "ch" scope = "session" value = "${sessionScope.user}"/>
-<c:set var = "cho" scope = "session" value = "${sessionScope.cart}"/>
-    <c:choose>
-        <c:when test="${not empty ch }">
-            <c:choose>
-                <c:when test="${not empty cho }">
-                    <c:redirect url="cart.jsp"></c:redirect>
-
-                </c:when>
-                <c:otherwise>
-                    <c:redirect url="empcart.jsp"></c:redirect>
 
 
-                </c:otherwise>
-            </c:choose>
-        </c:when>
-        <c:otherwise>
-            <c:redirect url="account.jsp"></c:redirect>
+<c:if test="${sessionScope.user != null && sessionScope.cart!=null }">
+    <c:redirect url="cart.jsp"></c:redirect>
+</c:if>
+<c:if test="${sessionScope.user != null && sessionScope.cart==null }">
+    <c:redirect url="empcart.jsp"></c:redirect>
+</c:if>
+<c:if test="${sessionScope.user == null  }">
+    <c:redirect url="account.jsp"></c:redirect>
+</c:if>
 
-        </c:otherwise>
-    </c:choose>
+
+
 
 
 </body>

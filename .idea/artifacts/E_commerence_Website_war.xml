@@ -3,48 +3,6 @@
     <output-path>$PROJECT_DIR$/out/artifacts/E_commerence_Website_war</output-path>
     <root id="archive" name="E-commerence Website_war.war">
       <element id="artifact" artifact-name="E-commerence Website:war exploded" />
-      <element id="directory" name="WEB-INF">
-        <element id="directory" name="lib">
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/el-api.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/jasper.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/jsp-api.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/catalina.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/ecj-4.15.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/jstl-1.2.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/jasper-el.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/poi-4.1.0.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/jaspic-api.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/javax.mail.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-api.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-jni.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/catalina-ha.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/servlet-api.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-dbcp.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-jdbc.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-util.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/catalina-ant.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/catalina-ssi.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-coyote.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/websocket-api.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-i18n-cs.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-i18n-de.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-i18n-es.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-i18n-fr.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-i18n-ja.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-i18n-ko.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-i18n-ru.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/annotations-api.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/catalina-tribes.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-util-scan.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-websocket.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-i18n-pt-BR.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/tomcat-i18n-zh-CN.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/catalina-storeconfig.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/javax.persistence-api-2.2.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/mysql-connector-java-5.1.49.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../apache-tomcat-9.0.38/lib/org.eclipse.persistence.jpa-2.5.0.jar" />
-        </element>
-      </element>
     </root>
   </artifact>
 </component>

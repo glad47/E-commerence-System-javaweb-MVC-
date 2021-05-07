@@ -299,14 +299,18 @@ public class CartDB {
         PreparedStatement ps=null;
         ResultSet rs=null;
         String query;
-        query = "select cal_tot_bill(?) res";
+        query = "select sum(lineitem.quantity * product.price  ) as total\n" +
+                " from cart join line_cart on cart.id=line_cart.id_cart\n" +
+                " join lineitem on lineitem.id=line_cart.id_line \n" +
+                " join product on lineitem.id_prod=product.id \n" +
+                " where cart.id_user=? and cart.active=\"yes\"";
         try{
             ps=connection.prepareStatement(query);
             ps.setInt(1,user_id);
             rs= ps.executeQuery();
             float res=0;
             if(rs.next()){
-                res= rs.getFloat("res");
+                res= rs.getFloat("total");
             }
 
             return res;
@@ -328,14 +332,18 @@ public class CartDB {
         PreparedStatement ps=null;
         ResultSet rs=null;
         String query;
-        query = "select cal_tot_tax(?) res";
+        query = " select sum(lineitem.quantity * product.price *0.05 ) as tax\n" +
+                " from cart join line_cart on cart.id=line_cart.id_cart\n" +
+                " join lineitem on lineitem.id=line_cart.id_line \n" +
+                " join product on lineitem.id_prod=product.id \n" +
+                " where cart.id_user=? and cart.active=\"yes\"";
         try{
             ps=connection.prepareStatement(query);
             ps.setInt(1,user_id);
             rs= ps.executeQuery();
             float res=0;
             if(rs.next()){
-                res= rs.getFloat("res");
+                res= rs.getFloat("tax");
             }
 
             return res;

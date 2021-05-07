@@ -170,6 +170,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script src="js/jquery-3.5.1.js"></script>
+
 <script>
     $(function(){
         var LoginForm=$("#LoginForm");
@@ -202,6 +203,7 @@
 
                     },
                     success: function (data) {
+                        console.log(data)
                         if (data == "login failed") {
                             console.log(data);
                             $("#LoginForm input").css('border-color', 'red')
@@ -211,6 +213,7 @@
                             document.location.href = 'main.jsp', true;
                         }
                     },
+                    async:false
                 });
             }else{
                 alert("please enter all the required fields")
@@ -233,6 +236,7 @@
                         email:email
                     },
                     success : function(data) {
+                        console.log(data)
                         if(data == "email failed"){
                             console.log(data)
                             $("#RegForm input[type='email']").css('border-color','red')
@@ -247,6 +251,7 @@
                             alert("Registered Successfully, Please Login in")
                         }
                     },
+                    async:false
                 });
             }else{
                 alert("Please enter all required fields")

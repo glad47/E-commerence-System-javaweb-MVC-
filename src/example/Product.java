@@ -26,6 +26,21 @@ public class Product implements Serializable {
         rating=0;
         src=new ArrayList<String>();
     }
+    public Product(int id,String name,String title,String date,String description,
+                   double price, int rating,String src) {
+        this.id=id;
+        this.name=name;
+        this.title=title;
+        this.date=date;
+        this.description =description;
+        this.price = price;
+        this.rating=rating;
+        ArrayList<String> newAr=new ArrayList<String>();
+        newAr.add(src);
+        this.src=newAr;
+    }
+
+
 
     public void setDescription(String description) {
         this.description = description;
@@ -93,6 +108,12 @@ public class Product implements Serializable {
 
     public void setRating(int rating) {
         this.rating = rating;
+    }
+    public static void toString(Product prod){
+        System.out.println("["+prod.getId()+",\""+prod.getName()+"\",\""
+                +prod.getTitle()+"\",\""+prod.getDate()+"\",\""+prod.getDescription()+"\","
+                +prod.getPrice()+","+prod.getRating()+",\""+prod.getSrc().get(0)+"\"]");
+
     }
 
 }

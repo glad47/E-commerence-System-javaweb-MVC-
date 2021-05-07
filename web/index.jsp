@@ -15,22 +15,45 @@
       <script>
 
           $(function(){
-              $.post("productservlet",
-                  {
+
+              $.ajax({
+                  type: 'POST',
+                  url: "productservlet",
+                  data:  {
                       action: "default"
                   },
-                  function(data, status){
-                      document.location.href = 'main.jsp',true;
+                  success: ()=>{
+                      $.ajax({
+                          type: 'POST',
+                          url: "cartservlet",
+                          data:  {
+                              action: "default"
+                          },
+                          success:  function(data, status){
+                              document.location.href = 'main.jsp',true;
 
-                  });
-              $.post("cartservlet",
-                  {
-                      action: "default"
+                          },
+                          async:false
+                      });
+
+
                   },
-                  function(data, status){
-                      document.location.href = 'main.jsp',true;
+                  async:false
+              });
+              // $.post("productservlet",
+              //     {
+              //         action: "default"
+              //     },
 
-                  });
+
+              // $.post("cartservlet",
+              //     {
+              //         action: "default"
+              //     },
+              //     function(data, status){
+              //         document.location.href = 'main.jsp',true;
+              //
+              //     });
           })
       </script>
 
