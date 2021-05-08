@@ -1,4 +1,4 @@
-package example;
+package example.service;
 
 import javax.servlet.http.Cookie;
 import java.io.Serializable;

@@ -1,4 +1,6 @@
-package example;
+package example.service;
+
+import example.model.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

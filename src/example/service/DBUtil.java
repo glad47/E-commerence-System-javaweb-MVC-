@@ -1,4 +1,4 @@
-package example;
+package example.service;
 
 
 import java.sql.ResultSet;

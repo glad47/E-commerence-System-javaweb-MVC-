@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>ProductServlet</servlet-name>
-        <servlet-class>example.ProductServlet</servlet-class>
+        <servlet-class>example.controller.ProductServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ProductServlet</servlet-name>
@@ -14,7 +14,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>CartServlet</servlet-name>
-        <servlet-class>example.CartServlet</servlet-class>
+        <servlet-class>example.controller.CartServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CartServlet</servlet-name>
@@ -22,7 +22,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>UserServlet</servlet-name>
-        <servlet-class>example.UserServlet</servlet-class>
+        <servlet-class>example.controller.UserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>UserServlet</servlet-name>

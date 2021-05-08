@@ -92,7 +92,7 @@
 <c:if test="${empty ch} == ture ">
     <c:redirect url="products.jsp"></c:redirect>
 </c:if>
-<jsp:useBean id="cart" scope="session" type="example.Cart"/>
+<jsp:useBean id="cart" scope="session" type="example.model.Cart"/>
 <c:forEach var="item" varStatus="status"  items="${cart.items}">
     <tr class="itm">
         <td>

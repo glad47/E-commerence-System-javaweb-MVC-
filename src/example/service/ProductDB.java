@@ -1,4 +1,7 @@
-package example;
+package example.service;
+
+import example.model.Product;
+import example.model.ProductList;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

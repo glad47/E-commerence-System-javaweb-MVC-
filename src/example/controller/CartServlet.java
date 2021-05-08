@@ -1,6 +1,12 @@
-package example;
+package example.controller;
 
-import javax.servlet.ServletContext;
+import example.model.Cart;
+import example.model.Product;
+import example.model.User;
+import example.service.CartDB;
+import example.service.CookieUtil;
+import example.service.ProductDB;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;

@@ -1,4 +1,8 @@
-package example;
+package example.service;
+
+import example.model.Cart;
+import example.model.LineItem;
+import example.model.Product;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -248,7 +252,7 @@ public class CartDB {
             while(rs.next()){
                 LineItem lineItem = new LineItem();
                 lineItem.setId(rs.getInt("line_cart.id_line"));
-                Product product=ProductDB.selectProduct(Integer.toString(rs.getInt("lineitem.id_prod")));
+                Product product= ProductDB.selectProduct(Integer.toString(rs.getInt("lineitem.id_prod")));
                 lineItem.setProduct(product);
                 lineItem.setQuantity(rs.getInt("lineitem.quantity"));
                 lineItem.setSize(rs.getString("lineitem.size"));
